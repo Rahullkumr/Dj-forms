@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dj wale babu gana baja</title>
+</head>
+
+<body>
+  <h1>home page</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{form.as_p}} <br>
+    <button type="submit">Submit</button>
+    <hr>
+    <h1>{{form.name}}</h1>
+    <h1>{{rollno}}</h1>
+    <h1>{{course}}</h1>
+    <h1>{{fee}}</h1>
+    <h1>{{phone}}</h1>
+  </form>
+</body>
+
+</html>
